@@ -1,0 +1,4 @@
+github.com/goal-web/contracts v0.3.0 h1:XVdeRGbswyo+e1Tp4SmKD5KJqrMm23eakaARXob7U7A=
+github.com/goal-web/contracts v0.3.0/go.mod h1:33koNCIiQ7GzBmYycynenVtv5E+Jq7lWGZ8vKi5uXJQ=
+github.com/sashabaranov/go-openai v1.24.0 h1:4H4Pg8Bl2RH/YSnU8DYumZbuHnnkfioor/dtNlB20D4=
+github.com/sashabaranov/go-openai v1.24.0/go.mod h1:lj5b/K+zjTSFxVLijLSTDZuP7adOgerWeFyZLUhAKRg=
