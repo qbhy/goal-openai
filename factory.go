@@ -21,7 +21,7 @@ func (f *factory) Client(drivers ...string) *openai.Client {
 		return client.(*openai.Client)
 	}
 
-	client := openai.NewClient(f.config.Keys[key])
+	client := openai.NewClientWithConfig(f.config.Configurations[key])
 
 	f.clients.Store(key, client)
 	return client

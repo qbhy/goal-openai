@@ -2,10 +2,15 @@ package goal_openai
 
 import (
 	"github.com/goal-web/contracts"
+	"github.com/sashabaranov/go-openai"
 	"sync"
 )
 
 type ServiceProvider struct {
+}
+
+func Service() contracts.ServiceProvider {
+	return ServiceProvider{}
 }
 
 func (service ServiceProvider) Register(application contracts.Application) {
@@ -15,6 +20,10 @@ func (service ServiceProvider) Register(application contracts.Application) {
 			config:  conf,
 			clients: sync.Map{},
 		}
+	})
+
+	application.Singleton("openai.client", func(f Factory) *openai.Client {
+		return f.Client()
 	})
 }
 
